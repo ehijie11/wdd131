@@ -106,10 +106,10 @@ main h2{
 }
 
 aside.right ul.box a {
-    color: rgb(210, 215, 211);
+    color: rgb(209, 213, 210);
 }
 
-.right ul li:hover {
+aside.right ul li:hover {
     color: white;
     font-weight: 700;
     background-color: rgb(40, 76, 110);
