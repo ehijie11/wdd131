@@ -10,7 +10,7 @@ body {
 /* Header Section */
 header {
     background-color:#989062;
-    color: #f1ebff;
+    color: black;
 }
 
 header h1 {
@@ -136,3 +136,5 @@ footer {
     text-align: center;
     background-color:#989062;
 }
+
+.currentyear
