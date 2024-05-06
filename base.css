@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 :root {
-    --heading-font: Monteserrat, serif;
+    --heading-font: Monteserrat, sans-serif;
     --paragraph-font: Roboto , serif;
 
    
@@ -23,54 +23,56 @@ body{
 }
 
 header{
-    background: whitesmoke;
-    padding: 1em 0 1em 0;
+    background:#B1A180;
+    padding: 0;
     justify-content: space-between;
     display: grid;
-    max-width: 100%;
-    
+    max-width: 100%;   
 }
 
 header h1{
     display: flex;
     flex: 1 1 100%;
     font-size: 2rem; 
-    padding: 0rem 1rem; 
+    padding: 0; 
     margin: 0;
 }
-
 nav {
     display: flex;
     flex: 1 1 100%;
-    background: rgb(24, 46, 68);
+    background: #6D5F37;
+    max-width: 100%;
+    padding: 0;
+    justify-content: space-between;
     margin-top: -0.4em;
     margin-bottom: -0.85em;
-  }
-  
-nav ul {
-    list-style: none; 
-    padding: 1; 
-    margin: 1;
-  }
-  
-nav ul li {
-    margin-right: 2rem;
-  }
-  
+}
+
 nav a {
     text-decoration: none;
-    color: white;
-    font-size: 1.5rem; 
-    padding: 1rem 2rem;
-  }
+    padding: 5.12rem;
+    color: black;
+    font-size: 1.75rem;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 20px; 
+}
 
 nav a:hover {
-    color: var(--nav-link-color);
+    background-color: #989062;
     font-weight: 700;
     text-decoration: underline;
-    background-color:rgb(40, 76, 110);
-    color: #edf5f6;
- } 
+}
 
 .main{
     display: flex;
@@ -116,10 +118,10 @@ aside.right ul li:hover {
     
  } 
 
+
 footer{
-    background: rgb(24, 46, 68);
-    padding: 0em 0 0em 0;
-    color: white;
+    background: #B1A180;
+    padding: 1em 0 1em 0;
 }
 
 @media all and (max-width: 550px){
