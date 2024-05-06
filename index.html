@@ -8,11 +8,12 @@
     <meta name="author" content="Ehijie I. Omijie">
     <link rel="stylesheet" href="base.css">
 </head>
+
 <body>
     <header class="header-box">
         <h1>WDD 131: Dynamic Web Fundamentals - Ehijie Omijie</h1>
         <nav>
-            <ul class=""header-box">
+            <ul class="navigation">
                 <ls><a href="https://www.linkedin.com/in/ehijie-omijie/">LinkedIn</a></ls>
                 <ls><a href="https://byui.instructure.com/">I-Learn</a></ls>
                 <ls><a href="https://www.churchofjesuschrist.org/study/scriptures?lang=eng">Scripture</a></ls>
@@ -25,10 +26,7 @@
         <section class="card">
             <div class="title">
                 <h2>About Me</h2>
-            </div>
-
-        
-        
+            </div>   
             
             <div class="content">
                 <p id="mydescription"> Hi there! I'm Ehijie Omijie, a dedicated student learning how to create software.
@@ -56,22 +54,22 @@
             </div>
             <div>
                 <ul>
-                    <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-                    <li><a href="https://www.mindluster.com/" target="_blank">Mindluster</a></li>
-                    <li><a href="https://www.codepen.com/" target="_blank">CodePen</a></li>
-                    <li><a href="https://www.codecademy.com/" target="_blank">CodeCademy</a></li>
+                    <li><a class="links" href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                    <li><a class="links" href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+                    <li><a class="links" href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a class="links" href="https://www.mindluster.com/" target="_blank">Mindluster</a></li>
+                    <li><a class="links" href="https://www.codepen.com/" target="_blank">CodePen</a></li>
+                    <li><a class="links" href="https://www.codecademy.com/" target="_blank">CodeCademy</a></li>
                 </ul>
             </div>
-        </section>
-                         
-    </main>
-   
+        </section>                    
+    </main>   
       
-    <footer>
-      <p>Copyright &copy; 2024 : Ehijie Omijie | Nigeria</p></footer>
+    <footer class="footer-box">
+      <p> &copy; <span id="currentYear"></span> Ehijie Omijie | Lagos Nigeria</p>
       <p id="lastModified"></p>
+    </footer>  
+    <script src="scripts/getdates.js"></script>
 </body>  
 
 </html>
