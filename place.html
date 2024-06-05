@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page - Nigeria</title>
+    <meta name="description" content="W03 Assignment for WDD131 BYU I">
+    <meta name="author" content="Ehijie Omijie">
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div id="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/Brazil-Small.webp">
+                <source media="(max-width: 1000px)" srcset="images/Brazil-Medium.webp">
+                <img src="images/Brazil-Large.webp" alt="Cristo Redentor" width="1200" height="750">
+            </picture>
+            <div id="data">
+                <h2>Data</h2>
+                <p>Area: 8,514,215 km2</p>
+                <p>Population: 215.3 million (2022)</p>
+                <p>Capital: Abuja</p>
+                <p>Language: English</p>
+                <p>Currency: Naira (R$)</p>
+                <p>Time Zone: West Central Africa Time (GMT+1)</p>
+                <p>Calling Code: +234</p>
+                <p>Internet TLD: .ng</p>
+            </div>
+            <div id="weather">
+                <h2>Weather <img id="sun" src="images/sunnyweather.svg" alt="sunny weather icon"></h2>
+                <p>Temperature: 8° C</p>
+                <p>Conditions: Sunny</p>
+                <p>Wind Speed: 4.9 Km/h</p>
+                <p>Wind Chill: <span id="windchill"></span>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-box">
+        <p>&copy; <span id="currentYear"></span> 🤙 Ehijie Omijie - Lagos, Nigeria 🤙</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</body>
+
+</html>
