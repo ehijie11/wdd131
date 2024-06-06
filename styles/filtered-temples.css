@@ -4,7 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Nav Bar vvv */
 
 #hamburger {
     border: none;
@@ -24,7 +23,7 @@
 #nav {
     display: flex;
     flex-direction: column;
-    background-color: #104D71;
+    background-color: #415e6f;
     width: 100%;
     margin: 0;
     justify-content: center;
@@ -126,7 +125,7 @@ figure {
 /* Main Body ^^^ */
 
 footer {
-    background-color: #104D71;
+    background-color: #415e6f;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
