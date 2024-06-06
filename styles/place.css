@@ -17,7 +17,7 @@ body {
 /* Header Section */
 header {
     background-color: #026455;
-    color: #FFFFFF;
+    color: whitesmoke;
     padding: 2rem;
 }
 
@@ -80,10 +80,10 @@ h2 #sun {
 /* Footer Section */
 footer {
     font-family: var(--header-font);
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
     background-color:#026455;
-    color: white;
+    color: whitesmoke;
 }
 
 
