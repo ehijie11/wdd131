@@ -17,7 +17,7 @@ header, footer {
 }
 
 h1 {
-    background-color: #010804;
+    background-color: #021f30;
     color: white;
     font-family: "MedievalSharp", Arial, Helvetica, sans-serif;
     padding: 20px;
@@ -46,7 +46,7 @@ p {
     justify-content: center;
 }
 
-#green, #brown {
+#white, #black {
     margin: 20px auto;
     width: 6rem;
     height: 6rem;
@@ -74,11 +74,11 @@ p {
 }
 
 #largeWireframe {
-    width: 40%;
+    width: 45%;
     height: auto;
 }
 
 #smallWireframe {
-    width: 20%;
+    width: 40%;
     height: auto;
 }
