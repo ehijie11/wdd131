@@ -12,12 +12,12 @@ main {
 }
 
 header, footer {
-    background-color: #6B4B3E;
+    background-color: #021f30;
     padding: 30px;
 }
 
 h1 {
-    background-color: #30543f;
+    background-color: #010804;
     color: white;
     font-family: "MedievalSharp", Arial, Helvetica, sans-serif;
     padding: 20px;
@@ -56,13 +56,13 @@ p {
 }
 
 #black {
-    background-color: #000;
+    background-color: #000000;
     color: white;
 }
 
 #white {
     background-color: #ffffff;
-    color: black;
+    color: #000000;
 }
 
 #typographyHeading {
@@ -79,6 +79,6 @@ p {
 }
 
 #smallWireframe {
-    width: 15%;
+    width: 20%;
     height: auto;
 }
