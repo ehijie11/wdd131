@@ -168,7 +168,19 @@ button:hover {
     margin-top: 10px;
 }
 
-
+.image-gallery {
+    display: flex; /* Arrange images horizontally */
+    flex-wrap: wrap; /* Allow images to wrap to multiple lines if needed */
+    margin: 0 auto; /* Center the gallery horizontally */
+    gap: 1rem; /* Add some space between images */
+  }
+  
+  .image-gallery img {
+    width: 200px; /* Set a width for each image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images fill the available space */
+  }
+  
 
 /* Add the following styles to your existing CSS */
 .contact-info {
