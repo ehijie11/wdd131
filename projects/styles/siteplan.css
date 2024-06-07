@@ -14,6 +14,7 @@ main {
 header, footer {
     background-color: #021f30;
     padding: 30px;
+    color: white;
 }
 
 h1 {
@@ -81,4 +82,16 @@ p {
 #smallWireframe {
     width: 40%;
     height: auto;
+}
+
+.cta-button {
+    background-color: #030303;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+   
+}
 }
