@@ -181,7 +181,9 @@ button:hover {
     object-fit: cover; /* Ensure images fill the available space */
   }
   
-
+  .image-gallery {
+    background-color: black;
+  }
 /* Add the following styles to your existing CSS */
 .contact-info {
     max-width: 800px;
