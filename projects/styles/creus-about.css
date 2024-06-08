@@ -242,26 +242,40 @@ main {
 }
 
 
-/* Footer Css */
- footer {
-    display: flex;
-    justify-content: space-between; 
-    align-items: left; 
-    background-color: black; 
-    color: whitesmoke; 
-    padding: 10px 20px; 
-    font-family: "Merriweather", Arial, Helvetica, sans-serif;
-    
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: whitesmoke;
+  padding: 20px;
+  font-family: "Merriweather", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  margin: 5px 0;
 }
 
 .social-icons {
-    display: flex; 
-    gap: 10px; 
+  display: flex;
+  gap: 15px;
 }
 
 .social-icons a img {
-    max-width: 30px; 
+  max-width: 30px;
+  transition: transform 0.3s ease;
 }
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
 
 
 /* CONTACT.html CSS */
