@@ -177,24 +177,29 @@ button:hover {
     color: white;
 }
 
-
-
-.image-gallery {
-    display: flex; /* Arrange images horizontally */
-    flex-wrap: wrap; /* Allow images to wrap to multiple lines if needed */
-    margin: 0 auto; /* Center the gallery horizontally */
-    gap: 1rem; /* Add some space between images */
-  }
-  
-  .image-gallery img {
-    width: 200px; /* Set a width for each image */
-    height: 200px; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure images fill the available space */
+.image-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   
   .image-gallery {
-    background-color: black;
+    flex: 1 1 calc(33.33% - 10px);
+    margin-bottom: 20px;
   }
+  
+  .image-gallery h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+
 
   
 /* Style the iframe to remove border and set a width */
