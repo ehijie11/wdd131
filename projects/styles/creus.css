@@ -61,6 +61,40 @@ header nav a:hover {
   content: "X";
 }
 
+/* Additional CSS for Hamburger Menu */
+@media (max-width: 768px) {
+  #nav {
+      display: none;
+      flex-direction: column;
+      background-color: whitesmoke;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 10px 0;
+  }
+
+  #nav.open {
+      display: flex;
+  }
+
+  header {
+      justify-content: space-between;
+  }
+
+  #hamburger {
+      display: block;
+  }
+}
+
+/* Hide hamburger button on larger screens */
+@media (min-width: 769px) {
+  #hamburger {
+      display: none;
+  }
+}
+
+
 /* Navigation Styles */
 #nav {
   display: flex;

@@ -8,10 +8,13 @@ lastModified.innerHTML = (document.lastModified);
 // Footer pieces ^^^^
 // Hamburger Menu vvvv
 
-const hamButton = document.querySelector("#hamburger");
-const ul = document.querySelector("ul");
 
-hamButton.addEventListener("click", () => {
-    ul.classList.toggle("open-ul");
-    hamButton.classList.toggle("open");
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    
+    hamburger.addEventListener('click', function() {
+        nav.classList.toggle('open');
+        hamburger.classList.toggle('open');
+    });
 });
