@@ -73,6 +73,22 @@ header nav a:hover {
   margin: 0;
 }
 
+/* History Section Styles */
+.history {
+  margin-bottom: 40px;
+}
+
+.history h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.history img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
 /* Hero Section Styles */
 .hero {
   position: relative;
@@ -80,17 +96,23 @@ header nav a:hover {
   height: 500px;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* Align items to the right */
   align-items: center;
   background-color: black;
 }
 
-.hero h2 {
-  text-align: center;
-  padding: 1rem;
-  border-radius: 6px;
+.hero article {
+  position: relative; /* Change to relative positioning */
+  width: 50%; /* Adjust width of the article */
+  max-width: 400px; /* Set a maximum width */
+  padding: 20px; /* Add some padding */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
   color: white;
   z-index: 1;
+}
+
+.hero article p {
+  font-size: 18px;
 }
 
 .hero img {
@@ -102,6 +124,19 @@ header nav a:hover {
   object-fit: cover;
   z-index: 0;
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    justify-content: center; /* Center align items on smaller screens */
+  }
+
+  .hero article {
+    width: 80%; /* Adjust width of the article for smaller screens */
+    max-width: 100%;
+  }
+}
+
 
 /* Container Styles */
 .container {
