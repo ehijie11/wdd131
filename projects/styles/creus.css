@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -171,7 +171,7 @@ button, .cta-button {
   transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  outline: none; /* Remove default outline */
+  outline: none;
 }
 
 button:hover, .cta-button:hover {
@@ -180,20 +180,20 @@ button:hover, .cta-button:hover {
 }
 
 button:focus, .cta-button:focus {
-  outline: 2px solid #ffffff; /* Accessible focus outline */
+  outline: 2px solid #ffffff; 
   outline-offset: 2px;
 }
 
 button:active, .cta-button:active {
-  background-color: #333; /* Darker background color on active state */
-  transform: scale(0.98); /* Slightly shrink on active for effect */
+  background-color: #333; 
+  transform: scale(0.98);
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
   button, .cta-button {
-    font-size: 16px; /* Slightly smaller font size on smaller screens */
-    padding: 10px 20px; /* Adjust padding for smaller screens */
+    font-size: 16px; 
+    padding: 10px 20px; 
   }
 }
 
@@ -202,14 +202,14 @@ button:active, .cta-button:active {
 .image-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Center the gallery items */
+  justify-content: space-around; 
   gap: 1rem; /* Add space between gallery items */
   padding: 20px;
-  background-color: #f9f9f9; /* Light background color for the section */
+  background-color: #f9f9f9; 
 }
 
 .image-gallery {
-  flex: 1 1 300px; /* Allow items to grow and shrink, with a base size */
+  flex: 1 1 300px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,19 +220,19 @@ button:active, .cta-button:active {
 }
 
 .image-gallery:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover for effect */
+  transform: scale(1.05);
 }
 
 .image-gallery img {
-  width: 100%; /* Ensure images take the full width of the container */
+  width: 100%; 
   height: auto;
-  max-height: 200px; /* Maintain aspect ratio and prevent overflow */
+  max-height: 200px; 
   object-fit: cover;
   border-radius: 10px;
 }
 
 .image-gallery h4 {
-  font-size: 1.25em; /* Slightly larger font size */
+  font-size: 1.25em; 
   margin-top: 10px;
   color: whitesmoke;
 }
@@ -275,7 +275,7 @@ button:active, .cta-button:active {
 
 
 
-/* Brand Section Styles */
+/* Brand Section */
 .brand-section {
   text-align: center;
   margin-bottom: 20px;
@@ -305,7 +305,6 @@ main {
   padding: 20px;
 }
 
-/* History Section Styles */
 .history {
   margin-bottom: 40px;
 }
@@ -321,7 +320,7 @@ main {
   margin-bottom: 20px;
 }
 
-/* Adventures Section Styles */
+/* Adventures Section */
 .adventures {
   padding: 20px;
   background-color: #f9f9f9;
@@ -365,7 +364,7 @@ figcaption {
   color: #231e1e;
 }
 
-/* Footer Styles */
+/* FOOTER */
 footer {
   display: flex;
   flex-direction: column;
@@ -400,7 +399,7 @@ footer {
   transform: scale(1.1);
 }
 
-/* Contact Info Styles */
+/* CINTACT FORM */
 .contact-info {
   max-width: 400px;
   margin: 0 auto;
@@ -433,7 +432,6 @@ footer {
   color: #040404;
 }
 
-/* Fieldset Styles */
 fieldset {
   border: 1px solid #ddd;
   padding: 1.5rem;
@@ -449,7 +447,7 @@ legend {
   text-align: center;
 }
 
-/* Employee Profiles Styles */
+
 .employee-profiles {
   display: flex;
   justify-content: center;
@@ -467,7 +465,6 @@ legend {
   border-radius: 50%;
 }
 
-/* Contact Form Styles */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -482,7 +479,6 @@ textarea#message {
   resize: vertical;
 }
 
-/* Media Queries for Responsive Design */
 @media (min-width: 600px) {
   header nav a {
       padding: 15px 25px;
@@ -567,7 +563,6 @@ figcaption {
 
 
 /*SALES PAGE */
-/* Category Styles */
 .category {
   margin-bottom: 40px;
 }
@@ -611,7 +606,7 @@ figcaption {
   }
 }
 
-/* Sales Panel Styles */
+
 /* Sales Panel Styles */
 .sales-panel {
   background-color: #f9f9f9;
@@ -619,7 +614,7 @@ figcaption {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-height: 400px;
-  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-y: auto; 
 }
 
 .sales-panel h2 {
@@ -630,14 +625,14 @@ figcaption {
 
 .product-list {
   display: flex;
-  flex-wrap: nowrap; /* Ensure products are in a single row */
+  flex-wrap: nowrap; 
   gap: 20px;
   overflow-x: auto; /* Enable horizontal scrolling */
 }
 
 .product {
   flex: 0 0 auto;
-  width: 250px; /* Width of each product */
+  width: 250px; 
   background-color: #fff;
   padding: 10px;
   border-radius: 8px;
@@ -645,8 +640,8 @@ figcaption {
 }
 
 .product img {
-  width: 200px; /* Ensure all images fill their containers */
-  height: 200px; /* Maintain aspect ratio */
+  width: 200px; 
+  height: 200px; 
   border-radius: 8px;
 }
 
