@@ -612,6 +612,7 @@ figcaption {
 }
 
 /* Sales Panel Styles */
+/* Sales Panel Styles */
 .sales-panel {
   background-color: #f9f9f9;
   padding: 20px;
@@ -644,7 +645,8 @@ figcaption {
 }
 
 .product img {
-  width: 100%;
+  width: 200px; /* Ensure all images fill their containers */
+  height: 200px; /* Maintain aspect ratio */
   border-radius: 8px;
 }
 
@@ -666,3 +668,4 @@ figcaption {
   color: #333;
   font-weight: bold;
 }
+
