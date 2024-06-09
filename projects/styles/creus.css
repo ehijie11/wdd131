@@ -164,41 +164,116 @@ header nav a:hover {
 button, .cta-button {
   background-color: #080808;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px; /* Slightly larger padding for better tap target size */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
   font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none; /* Remove default outline */
 }
 
 button:hover, .cta-button:hover {
   background-color: #1d1d1f;
+  transform: scale(1.05); /* Slightly enlarge on hover for effect */
 }
+
+button:focus, .cta-button:focus {
+  outline: 2px solid #ffffff; /* Accessible focus outline */
+  outline-offset: 2px;
+}
+
+button:active, .cta-button:active {
+  background-color: #333; /* Darker background color on active state */
+  transform: scale(0.98); /* Slightly shrink on active for effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  button, .cta-button {
+    font-size: 16px; /* Slightly smaller font size on smaller screens */
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+}
+
 
 /* Image Section Styles */
 .image-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around; /* Center the gallery items */
+  gap: 1rem; /* Add space between gallery items */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color for the section */
 }
 
 .image-gallery {
-  flex: 1 1 calc(33.33% - 10px);
-  margin-bottom: 20px;
+  flex: 1 1 300px; /* Allow items to grow and shrink, with a base size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-.image-gallery h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.image-gallery:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover for effect */
 }
 
 .image-gallery img {
-  width: 100%;
-  height: 300px;
-  display: block;
-  margin-bottom: 10px;
+  width: 100%; /* Ensure images take the full width of the container */
+  height: auto;
+  max-height: 200px; /* Maintain aspect ratio and prevent overflow */
+  object-fit: cover;
+  border-radius: 10px;
 }
+
+.image-gallery h4 {
+  font-size: 1.25em; /* Slightly larger font size */
+  margin-top: 10px;
+  color: whitesmoke;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 600px) {
+  .image-section {
+    gap: 1.5rem; /* Larger gap on bigger screens */
+  }
+  
+  .image-gallery img {
+    max-height: 250px; /* Increase max height on bigger screens */
+  }
+  
+  .image-gallery h4 {
+    font-size: 1.5em; /* Larger font size on bigger screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .image-gallery {
+    flex: 1 1 calc(50% - 1rem); /* Adjust size to fit two items per row */
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-gallery {
+    flex: 1 1 calc(33.33% - 1rem); /* Adjust size to fit three items per row */
+  }
+  
+  .image-gallery img {
+    max-height: 300px; /* Increase max height on larger screens */
+  }
+  
+  .image-gallery h4 {
+    font-size: 1.75em; /* Larger font size on larger screens */
+  }
+}
+
+
+
 
 /* Brand Section Styles */
 .brand-section {
