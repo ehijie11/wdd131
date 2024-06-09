@@ -245,30 +245,90 @@ main {
     margin-bottom: 20px;
 }
 
-/* Adventures section styles */
+body {
+  margin: 0;
+  font-family: "Merriweather", Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
 .adventures {
-    margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
 .adventures h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #222;
 }
 
 .image-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.image-container figure {
-    text-align: center;
+figure {
+  margin: 0;
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
 }
 
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+figure img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
+
+figure:hover img {
+  transform: scale(1.05);
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #231e1e;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 600px) {
+  .adventures h2 {
+      font-size: 2.5em;
+  }
+
+  .image-container {
+      gap: 30px;
+  }
+
+  figcaption {
+      font-size: 1.1em;
+  }
+}
+
+@media (min-width: 768px) {
+  figure {
+      width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  figure {
+      width: 30%;
+  }
+
+  .adventures h2 {
+      font-size: 3em;
+  }
+
+  figcaption {
+      font-size: 1.2em;
+  }
+}
+
 
 
 /* Footer Css */
