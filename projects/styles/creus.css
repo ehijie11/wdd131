@@ -610,3 +610,59 @@ figcaption {
     width: calc(100% - 10px);
   }
 }
+
+/* Sales Panel Styles */
+.sales-panel {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.sales-panel h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure products are in a single row */
+  gap: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.product {
+  flex: 0 0 auto;
+  width: 250px; /* Width of each product */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 16px;
+  color: #888;
+}
+
+.explore-link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
