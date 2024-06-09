@@ -474,4 +474,383 @@ fieldset {
     margin-right: 5px;
   }
   
+  /* Global Styles */
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: #333;
+  font-family: "Merriweather", Arial, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  max-width: 100%;
+  background-color: white;
+  padding: 10px;
+}
+
+header img {
+  margin: 0 0.3rem 0 1rem;
+  width: 100px;
+  height: auto;
+}
+
+header nav {
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: space-around;
+  text-align: right;
+}
+
+header nav a {
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  color: white;
+  background-color: black;
+  text-decoration: underline;
+}
+
+/* Hamburger Menu Styles */
+#hamburger {
+  border: none;
+  background: none;
+  font-size: larger;
+  color: white;
+}
+
+#hamburger::before {
+  content: "☰";
+}
+
+#hamburger.open::before {
+  content: "X";
+}
+
+/* Navigation Styles */
+#nav {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.hero h2 {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 6px;
+  color: white;
+  z-index: 1; 
+}
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: 0;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  border-radius: 5px 0 0 5px;
+  overflow: hidden;
+  background-color: #000000;
+  border: 0.5px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container img {
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container h1 {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 6px;
+  color: white;
+  margin-bottom: 0.2rem;
+}
+
+/* Button Styles */
+button, .cta-button {
+  background-color: #080808;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+button:hover, .cta-button:hover {
+  background-color: #1d1d1f;
+}
+
+/* Image Section Styles */
+.image-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-gallery {
+  flex: 1 1 calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
+.image-gallery h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Brand Section Styles */
+.brand-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.brand-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-section h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Iframe Styles */
+iframe {
+  border: none;
+  width: 100%;
+  height: 300px;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+/* Footer Styles */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: whitesmoke;
+  padding: 20px;
+  font-family: "Merriweather", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a img {
+  max-width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+/* Contact Info Styles */
+.contact-info {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.contact-info legend {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(34, 3, 33);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.contact-item p {
+  font-size: 1.2em;
+  color: #040404;
+}
+
+/* Fieldset Styles */
+fieldset {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-gap: .5rem;
+  background-color: #f5f5f5;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Employee Profiles Styles */
+.employee-profiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.employee {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.employee img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Contact Form Styles */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+textarea#message {
+  resize: vertical;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 600px) {
+  header nav a {
+      padding: 15px 25px;
+  }
   
+  .hero h2 {
+      font-size: 2em;
+  }
+
+  .container h1 {
+      font-size: 2em;
+  }
+
+  .image-gallery {
+      flex: 1 1 calc(50% - 10px);
+  }
+
+  .history h1 {
+      font-size: 28px;
+  }
+
+  .history img {
+      max-width: 50%;
+  }
+
+  .adventures h2 {
+      font-size: 2.5em;
+  }
+
+  .image-container {
+      gap: 30px;
+  }
+
+  figcaption {
+      font-size: 1.1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .container h1 {
+      font-size: 2.5em;
+  }
+
+  .image-gallery {
+      flex: 1 1 calc(33.33% - 10px);
+  }
+
+  .adventures h2 {
+      font-size: 3em;
+  }
+
+  figcaption {
+      font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  header nav a {
+      padding: 20px 30px;
+  }
+
+  .hero
