@@ -588,7 +588,7 @@ figcaption {
 
 .image-gallery1 img {
   width: calc(20% - 10px);
-  max-width: 100%;
+  max-width: 200px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
