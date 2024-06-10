@@ -1,4 +1,4 @@
-
+/* Global Styles */
 * {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -33,10 +33,14 @@ header nav {
 }
 
 header nav a {
-  color: black;
+  color: rgb(51, 56, 58);
   padding: 10px 20px;
   text-decoration: none;
   font-weight: 600;
+}
+
+header ul {
+  list-style: none
 }
 
 header nav a:hover {
@@ -93,7 +97,6 @@ header nav a:hover {
       display: none;
   }
 }
-
 
 /* Navigation Styles */
 #nav {
@@ -171,7 +174,7 @@ button, .cta-button {
   transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  outline: none;
+  outline: none; /* Remove default outline */
 }
 
 button:hover, .cta-button:hover {
